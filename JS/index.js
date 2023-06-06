@@ -1,4 +1,4 @@
-const teslaList = document.querySelector('.card');
+const teslaList = document.querySelector('.cards');
 
 
 const fragment = document.createDocumentFragment();
@@ -6,6 +6,8 @@ const fragment = document.createDocumentFragment();
 // const imagesUrl = 'https://image.tmdb.org/t/p/w500';
 
 let url = 'https://newsapi.org/v2/everything?q=tesla&from=2023-03-17&sortBy=publishedAt&apiKey=d3e3cb7ae700461b973257070435d351'
+
+
 
 async function fetchData() {
     try {
@@ -35,8 +37,6 @@ async function fetchData() {
             const textBox = document.createElement('div');
             textBox.classList.add('cards__textBox');
             teslaBox.appendChild(textBox);
-
-
 
             const images = document.createElement('img');
             images.classList.add('cards__img3');

@@ -2,6 +2,7 @@
     margin-top: 94px;
     &__item {
         @include flex;
+        display: flex;
     }
     &__titile4 {
         margin-bottom: 64px;
