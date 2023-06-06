@@ -6,7 +6,7 @@ const loading = document.querySelector('.js-loading');
 function renderPosts(posts) {
     posts.slice(0, 3).forEach(post => {
 
-        // let li = document.querySelector('list1');
+
 
 
         let img = document.createElement('img');
