@@ -22,6 +22,13 @@
         height: 221px;
         padding: 32px;
         border: 1px solid #d0d2e0;
+        box-shadow: 0px 0px 30px 5px rgba(38, 178, 153, 0.28);
+        -moz-box-shadow: 0px 0px 30px 5px rgba(38, 178, 153, 0.28);
+        box-shadow: 0px 0px 30px 5px rgba(38, 178, 153, 0.28);
+        ;
+    }
+    &__list:hover {
+        background-color: #FFD050;
     }
     &__imgs {
         width: 44px;
@@ -41,9 +48,6 @@
         line-height: 28px;
         color: #6D6E76;
         opacity: 0.7;
-    }
-    &__list2 {
-        background-color: #FFD050;
     }
     &__imgs {
         @include flex;
