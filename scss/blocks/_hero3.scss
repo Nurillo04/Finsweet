@@ -1,0 +1,111 @@
+ .hero3 {
+     background-color: #F4F0F8;
+     padding-top: 80px;
+     &__wrapper {
+         @include flex;
+     }
+     &__right {
+         width: 515px;
+         height: 360px;
+         background-image: url(../Images/PNG/hero2-img.png);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+     }
+     &__title5 {
+         font-family: $InterMedium;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 20px;
+         letter-spacing: 3px;
+         text-transform: uppercase;
+         color: #232536;
+     }
+     &__title2 {
+         margin: 10px 0px 14px 0px;
+         width: 600px;
+         font-family: $PlayfairBold;
+         font-size: 36px;
+         line-height: 48px;
+         letter-spacing: -1px;
+         color: #232536;
+     }
+     &__subtitle {
+         margin: 14px 0px 27px 0px;
+         font-family: $InterMedium;
+         font-size: 14px;
+         line-height: 20px;
+         color: #4C4C4C;
+     }
+     &__span {
+         color: #592EA9;
+     }
+     &__text {
+         width: 624px;
+         margin-bottom: 70px;
+         font-family: $InterRegular;
+         font-size: 16px;
+         line-height: 28px;
+         color: #6D6E76;
+     }
+     &__btn {
+         @include button;
+     }
+ }
+ 
+ @media only screen and (max-width:786px) {
+     .hero3 {
+         padding-top: 40px;
+         &__wrapper {
+             flex-direction: column-reverse;
+         }
+         &__right {
+             margin-top: 40px;
+         }
+         &__title5 {
+             letter-spacing: 1px;
+             margin-top: 50px;
+         }
+         &__text {
+             margin-bottom: 30px;
+             // width: 515px;
+         }
+     }
+ }
+ 
+ @media only screen and (max-width:375px) {
+     .hero3 {
+         &__right {
+             width: 350px;
+             // height: 360px;
+         }
+         &__title5 {
+             text-align: center;
+         }
+         &__title2 {
+             text-align: center;
+             margin: 10px 0px 14px 0px;
+             width: 300px;
+             font-size: 36px;
+             line-height: 48px;
+             letter-spacing: -1px;
+         }
+         &__subtitle {
+             text-align: center;
+             margin: 20px 0px 27px 0px;
+             font-size: 14px;
+             line-height: 20px;
+         }
+         &__text {
+             width: 324px;
+             margin-bottom: 30px;
+             font-size: 16px;
+             line-height: 28px;
+             text-align: center;
+         }
+         &__btn {
+             text-align: center;
+             margin-left: 68px;
+         }
+     }
+ }

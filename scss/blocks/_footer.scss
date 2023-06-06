@@ -1,0 +1,45 @@
+.footer {
+    margin-top: 73px;
+    background: #232536;
+    padding: 54px 0px;
+    &__wrapper {
+        @include flex;
+    }
+    &__text {
+        font-family: $InterRegular;
+        font-size: 16px;
+        line-height: 28px;
+        color: #FFFFFF;
+        opacity: 0.7;
+    }
+    &__right svg {
+        margin-left: 24px;
+    }
+}
+
+.footer-img:hover {
+    fill: #fa4ba8;
+}
+
+.footer-img:active {
+    fill: aqua;
+}
+
+@media only screen and(max-width:768px) {
+    .footer {
+        padding: 54px 60px;
+    }
+}
+
+@media only screen and(max-width:375px) {
+    .footer {
+        padding: 54px 46px;
+        &__wrapper {
+            flex-direction: column;
+            gap: 41px;
+        }
+        &__right {
+            margin-left: -30px;
+        }
+    }
+}

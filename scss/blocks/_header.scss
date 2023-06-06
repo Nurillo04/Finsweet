@@ -1,0 +1,163 @@
+.header {
+    background-color: #232536;
+    &__wrapper {
+        @include flex;
+    }
+    &__right {
+        @include flex;
+        // gap: 83px;
+    }
+    &__list {
+        @include flex;
+        gap: 24px;
+    }
+    &__list a {
+        font-family: $InterRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #FFFFFF;
+        &:hover {
+            color: red;
+        }
+        &:active {
+            color: aqua;
+        }
+    }
+    &__btn {
+        // margin-left: 81px;
+        padding: 16px 48px;
+        background: #FFFFFF;
+        font-family: $PlayfairBold;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        border-radius: 6px;
+        margin-left: 83px;
+        &:hover {
+            background: #6675d2;
+            border-radius: 6px;
+            color: red;
+        }
+        &:active {
+            background: #760a42;
+            border-radius: 6px;
+            color: aqua;
+        }
+    }
+    &__mlogo {
+        display: none;
+    }
+    &__right .mobil {
+        display: none;
+    }
+}
+
+.mobil {
+    top: 2px;
+    bottom: 100%;
+    width: 300px;
+    height: 667px;
+    position: fixed;
+    background: rgb(128, 255, 0);
+    transition: all 0.5s linear;
+    transform: translateX(100%);
+    background: rgb(0, 110, 255);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+.mobil-item {
+    font-family: $PlayfairBold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-top: 25px;
+    margin-bottom: 32px;
+    margin-left: -40px;
+}
+
+.mobil button {
+    display: block;
+    margin-left: 38px;
+}
+
+.mobil-hr {
+    width: 218px;
+    height: 1px;
+    margin-left: 12px;
+    background: wheat;
+    mix-blend-mode: normal;
+    opacity: 0.15;
+    margin-top: 24px;
+}
+
+.inputx {
+    width: 20px;
+    height: 20px;
+    margin-left: 200px;
+    font-size: 20px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 56px;
+    margin-bottom: 10px;
+}
+
+#input {
+    display: none;
+}
+
+#input2 {
+    display: none;
+}
+
+#input:checked~.mobil {
+    transform: translateX(-200px);
+}
+
+#input2:checked~.mobil {
+    transform: translateX(100%);
+}
+
+#input {
+    display: none;
+}
+
+#input:checked~.header__right img {
+    transform: rotateZ(180deg);
+}
+
+@media only screen and(max-width:768px) {
+    .header {
+        background-color: #232536;
+        &__btn {
+            margin-left: 40px;
+        }
+        &__list {
+            gap: 14px;
+        }
+    }
+}
+
+@media only screen and(max-width:375px) {
+    .header {
+        padding: 25px 0px;
+        &__nav {
+            display: none;
+        }
+        &__btn {
+            display: none;
+        }
+        &__mlogo {
+            display: block;
+        }
+        &__right .mobil {
+            display: block;
+        }
+    }
+}

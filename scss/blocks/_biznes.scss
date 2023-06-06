@@ -1,0 +1,19 @@
+.biznes {
+    margin-top: 80px;
+    &__search {
+        font-family: $InterRegular;
+        font-size: 16px;
+        line-height: 28px;
+        color: #232536;
+    }
+}
+
+.h2 {
+    font-family: $InterMedium;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    color: #232536;
+    margin-top: 78px;
+}

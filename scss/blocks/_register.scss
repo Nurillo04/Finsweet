@@ -1,0 +1,82 @@
+.register {
+    margin-bottom: 150px;
+    // background-color: rgba(0, 0, 0, 0.5);
+    &__title {
+        margin: 70px 0px;
+        font-family: $PlayfairBold;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        letter-spacing: -2px;
+        color: #232536;
+    }
+    &__form {
+        width: 600px;
+        margin: 0 auto;
+    }
+    &__box {
+        position: relative;
+    }
+    &__box input {
+        font-family: $InterRegular;
+        width: 100%;
+        padding: 10px;
+        margin-top: 14px;
+        color: #232536;
+        font-size: 16px;
+        line-height: 28px;
+        border: 1px solid rgb(187, 172, 172);
+    }
+    &__box label {
+        position: absolute;
+        top: 25px;
+        left: 9px;
+        pointer-events: none;
+        font-family: $InterRegular;
+        color: #232536;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__box span {
+        position: absolute;
+        top: 44px;
+        left: 9px;
+        color: red;
+        font-family: $InterRegular;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    &__box input:focus {
+        border: none;
+    }
+    &__box input:focus~label {
+        top: 5px;
+        left: 9px;
+        transition: 0.5s;
+        color: rgb(0, 51, 255);
+        font-size: 14px;
+    }
+    &__box input:valid~label {
+        top: 5px;
+        left: 9px;
+        transition: 0.5s;
+        color: rgb(0, 51, 255);
+        font-size: 14px;
+    }
+    &__btn {
+        width: 600px;
+        margin-top: 90px;
+        font-family: $PlayfairBold;
+        background: #FFD050;
+        font-size: 24px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        color: #232536;
+        @include flex;
+        justify-content: center;
+        padding: 10px 0px;
+        border: none;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,44 @@
+.startup {
+    background: #F4F0F8;
+    padding: 80px 0px;
+    &__title2 {
+        font-family: $PlayfairBold;
+        font-size: 56px;
+        line-height: 64px;
+        text-align: center;
+        letter-spacing: -1px;
+        color: #232536;
+    }
+    &__text {
+        margin: 16px 0px 32px 0px;
+        font-family: $InterRegular;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #6D6E76;
+    }
+    &__subtitle {
+        font-family: $InterMedium;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #232536;
+    }
+}
+
+@media only screen and(max-width:375px) {
+    .startup {
+        padding: 40px 0px;
+        &__title2 {
+            letter-spacing: 1px;
+        }
+        &__text {
+            margin: 16px 0px 20px 0px;
+        }
+        &__subtitle {
+            letter-spacing: 1px;
+        }
+    }
+}

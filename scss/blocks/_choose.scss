@@ -1,0 +1,132 @@
+.choose {
+    margin-top: 70px;
+    &__title3 {
+        margin: 70px 0px;
+        font-family: $PlayfairBold;
+        text-align: center;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 2px;
+        color: #232536;
+    }
+    &__hr {
+        opacity: 0.3;
+        border: 1px solid #6D6E76;
+    }
+    &__item {
+        @include flex;
+        gap: 32px;
+    }
+    &__list {
+        width: 296px;
+        height: 221px;
+        padding: 32px;
+        border: 1px solid #d0d2e0;
+    }
+    &__imgs {
+        width: 44px;
+        height: 44px;
+        @include flex;
+    }
+    &__title5 {
+        font-family: $PlayfairBold;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        color: #232536;
+    }
+    &__text {
+        font-family: $InterRegular;
+        font-size: 16px;
+        line-height: 28px;
+        color: #6D6E76;
+        opacity: 0.7;
+    }
+    &__list2 {
+        background-color: #FFD050;
+    }
+    &__imgs {
+        @include flex;
+    }
+    &__imgs2 {
+        background-color: #FBF6EA;
+        padding-left: 8px;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and(max-width:768px) {
+    .choose {
+        margin-top: 50px;
+        &__title3 {
+            margin: 20px 0px;
+            text-align: center;
+            font-size: 27px;
+            letter-spacing: 2px;
+        }
+        &__item {
+            gap: 15px;
+        }
+        &__list {
+            width: 280px;
+            height: 260px;
+            padding: 12px;
+        }
+        &__imgs {
+            margin-left: 30px;
+            justify-content: center;
+        }
+        &__title5 {
+            font-size: 22px;
+            line-height: 40px;
+            letter-spacing: 1px;
+        }
+        &__text {
+            font-size: 17px;
+            line-height: 28px;
+        }
+        &__imgs2 {
+            padding-left: 4px;
+        }
+    }
+}
+
+@media only screen and(max-width:375px) {
+    .choose {
+        margin-top: 40px;
+        &__title3 {
+            margin: 20px 0px;
+            text-align: center;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+        &__item {
+            flex-direction: column;
+            gap: 32px;
+        }
+        &__list {
+            width: 296px;
+            height: 260px;
+            padding: 32px;
+        }
+        &__imgs {
+            margin-left: 95px;
+            justify-content: center;
+        }
+        &__title5 {
+            font-size: 22px;
+            line-height: 40px;
+            letter-spacing: 1px;
+            text-align: center;
+            margin: 10px 0px;
+        }
+        &__text {
+            font-size: 17px;
+            line-height: 28px;
+            text-align: center;
+        }
+        &__imgs2 {
+            padding-left: 4px;
+        }
+    }
+}

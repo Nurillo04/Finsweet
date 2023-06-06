@@ -1,0 +1,28 @@
+@mixin flex ( $jconten: space-between, $align: center) {
+    display: flex;
+    justify-content: $jconten;
+    align-items: $align;
+}
+
+@mixin button {
+    background: #FFD050;
+    ;
+    border-radius: 6px;
+    padding: 16px 48px;
+    border: 0;
+    font-family: $PlayfairBold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #232536;
+    &:hover {
+        background: #6675d2;
+        border-radius: 6px;
+        color: antiquewhite;
+    }
+    &:active {
+        background: #760a42;
+        border-radius: 6px;
+        color: aqua;
+    }
+}

@@ -1,0 +1,107 @@
+.posts {
+    margin-top: 94px;
+    // position: relative;
+    &__item {
+        @include flex;
+        // position: relative;
+    }
+    &__titile4 {
+        margin-bottom: 64px;
+        font-family: $PlayfairBold;
+        font-size: 25px;
+        line-height: 48px;
+        letter-spacing: -2px;
+        color: #000000;
+    }
+    &__title5 {
+        font-family: $InterMedium;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        // position: absolute;
+        // left: 540px;
+        // top: 17px;
+    }
+    &__title3 {
+        width: 673px;
+        font-family: $PlayfairBold;
+        font-size: 26px;
+        line-height: 40px;
+        letter-spacing: -1px;
+        color: #232536;
+        margin: 20px 0px;
+        // position: absolute;
+    }
+    &__text {
+        width: 696px;
+        font-family: $InterRegular;
+        font-size: 16px;
+        line-height: 28px;
+        color: #232536;
+        opacity: 0.7;
+        margin: 20px 0px 20px 0px;
+        // position: absolute;
+        // top: 50px;
+    }
+    &__span {
+        color: #592EA9;
+    }
+    &__img3 {
+        max-width: 370px;
+        margin-bottom: 32px;
+        display: block;
+        // position: relative;
+        // height: 318px;
+    }
+    &__box {
+        background-color: #000000;
+    }
+    &__tesla-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    &__imgBox {
+        // margin-top: 30px;
+        max-width: 370px;
+        // margin-top: 30px;
+    }
+    // &__textBox {
+    //     // margin-top: 50px;
+    // }
+}
+
+@media only screen and(max-width:375px) {
+    .cards {
+        margin-top: 50px;
+        &__item {
+            flex-direction: column;
+        }
+        &__titile4 {
+            margin-bottom: 40px;
+        }
+        &__title3 {
+            max-width: 365px;
+        }
+        &__text {
+            max-width: 350px;
+        }
+        &__tesla-box {
+            flex-direction: column;
+        }
+    }
+}
+
+// .tesla-box {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     gap: 15px;
+// }
+// .imgBox {
+//     margin-top: 30px;
+// }
