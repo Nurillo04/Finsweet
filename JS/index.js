@@ -1,12 +1,9 @@
 const teslaList = document.querySelector('.cards');
-
-
 const fragment = document.createDocumentFragment();
 
 // const imagesUrl = 'https://image.tmdb.org/t/p/w500';
 
 let url = 'https://newsapi.org/v2/everything?q=tesla&from=2023-03-17&sortBy=publishedAt&apiKey=d3e3cb7ae700461b973257070435d351'
-
 
 
 async function fetchData() {
@@ -20,10 +17,6 @@ async function fetchData() {
 
         data.articles.slice(1, 4).map((tesla) => {
             // console.log(tesla);
-
-            // const teslaBox = document.createComment('div');
-            // teslaBox.classList.add('tesla-box');
-
 
             const teslaBox = document.createElement('div');
             teslaBox.classList.add('cards__tesla-box');
@@ -61,30 +54,7 @@ async function fetchData() {
             textBox.appendChild(title);
             textBox.appendChild(text);
 
-
-
-
-            // fragment.appendChild(images);
-            // fragment.appendChild(span);
-            // fragment.appendChild(title);
-            // fragment.appendChild(text);
-            // teslaList.appendChild(fragment);
-
-            // teslaBox.appendChild(images);
-            // teslaBox.appendChild(span);
-            // teslaBox.appendChild(title);
-            // teslaBox.appendChild(text);
-
-
-            // fragment.appendChild(teslaBox);
-
             teslaList.appendChild(fragment);
-
-
-
-
-
-
 
         })
 

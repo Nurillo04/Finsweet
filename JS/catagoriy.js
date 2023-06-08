@@ -22,8 +22,6 @@ async function fetchData() {
         url = `https://api.newscatcherapi.com/v2/search?q=d3e3cb7ae700461b973257070435d351&query=${search.value}`
     }
 
-
-
     try {
         const response = await fetch(url);
         const data = await response.json();
@@ -35,12 +33,9 @@ async function fetchData() {
         data.articles.slice(1, 6).map((tesla) => {
             // console.log(tesla);
 
-
-
             const teslaBox = document.createElement('div');
             teslaBox.classList.add('posts__tesla-box');
             teslaList.appendChild(teslaBox);
-
 
             const imgBox = document.createElement('div')
             imgBox.classList.add('posts__imgBox');
@@ -49,8 +44,6 @@ async function fetchData() {
             const textBox = document.createElement('div');
             textBox.classList.add('posts__textBox');
             teslaBox.appendChild(textBox);
-
-
 
             const images = document.createElement('img');
             images.classList.add('posts__img3');
@@ -69,30 +62,10 @@ async function fetchData() {
             text.classList.add('posts__text');
             text.textContent = tesla.content
 
-
-
-
             imgBox.appendChild(images);
             textBox.appendChild(span);
             textBox.appendChild(title);
             textBox.appendChild(text);
-            // teslaList.appendChild(fragment);
-
-            // teslaBox.appendChild(images);
-            // teslaBox.appendChild(span);
-            // teslaBox.appendChild(title);
-            // teslaBox.appendChild(text);
-
-
-            // fragment.appendChild(teslaBox);
-
-            // teslaList.appendChild(fragment);
-
-
-
-
-
-
 
         })
 

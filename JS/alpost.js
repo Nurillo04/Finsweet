@@ -23,7 +23,6 @@ async function fetchData() {
     }
 
 
-
     try {
         const response = await fetch(url);
         const data = await response.json();
@@ -34,8 +33,6 @@ async function fetchData() {
 
         data.articles.slice(1, 8).map((tesla) => {
             // console.log(tesla);
-
-
 
             const teslaBox = document.createElement('div');
             teslaBox.classList.add('posts__tesla-box');
@@ -49,8 +46,6 @@ async function fetchData() {
             const textBox = document.createElement('div');
             textBox.classList.add('posts__textBox');
             teslaBox.appendChild(textBox);
-
-
 
             const images = document.createElement('img');
             images.classList.add('posts__img3');
@@ -69,24 +64,11 @@ async function fetchData() {
             text.classList.add('posts__text');
             text.textContent = tesla.content
 
-
-
-
             imgBox.appendChild(images);
             textBox.appendChild(span);
             textBox.appendChild(title);
             textBox.appendChild(text);
-            // teslaList.appendChild(fragment);
 
-            // teslaBox.appendChild(images);
-            // teslaBox.appendChild(span);
-            // teslaBox.appendChild(title);
-            // teslaBox.appendChild(text);
-
-
-            // fragment.appendChild(teslaBox);
-
-            // teslaList.appendChild(fragment);
 
             const paginationWrapper = document.querySelector('.pagination__wrapper');
             paginationWrapper.innerHTML = '';
@@ -106,12 +88,6 @@ async function fetchData() {
                     paginationWrapper.appendChild(button);
                 }
             }
-
-
-
-
-
-
         })
 
     } catch (error) {
